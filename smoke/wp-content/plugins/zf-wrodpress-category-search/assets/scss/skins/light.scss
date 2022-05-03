@@ -1,0 +1,28 @@
+@import "../vars";
+
+$bg-box: #2c3e50;
+$bg-tabs: #D0D3D2;
+$bg-current: #e1e3e4;
+$bg-box-search-container: #e1e3e4;
+$nav-tabs-color: #1F1C1C;
+$color-current: #3F978E;
+$color-tab-nav: #000;
+
+$bg-input-search: rgba(248, 248, 248, 0.15);
+$color-input-search: #020202;
+$bg-submit-button: #3F978E;
+$bg-hover-submit-button: #42ada4;
+//$bg-icon-search: #CDD1D5;
+// arrow-left
+$border-arrow-left: rgba(87, 184, 213, 0);
+// dropdown cateogies
+$color-dropdown-categories: #858181;
+// checkbox
+$bg-checkbox-checked: #3F978E;
+$color-border-checkbox-checked: #3F978E;
+$tick-checkbox-color: #fff;
+$size-border-checkbox-unchecked: 0.1em;
+$color-border-checkbox-unchecked: #CACACA;
+
+
+@import "../theme";

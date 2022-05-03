@@ -1,0 +1,27 @@
+
+.zf-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.zf-row {
+  display: block;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.zf-font-item {
+  width: 30%;
+  margin: 4px;
+  display: inline-block;
+  a {
+
+    color: #000;
+    text-decoration: none;
+
+    i {
+      margin-right: 4px;
+    }
+  }
+}
+

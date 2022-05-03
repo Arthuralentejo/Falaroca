@@ -1,0 +1,528 @@
+@import "mixins/css3-mixins";
+@import "vars";
+
+.zfwcs-container {
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 6px;
+
+  .hidden {
+    display: none;
+  }
+  label {
+    font-weight: 400;
+  }
+  .zf-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.3 !important;
+  }
+  //input, buttom
+  button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    vertical-align: bottom;
+  }
+
+  button, input, select {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    padding: 4px;
+    vertical-align: baseline;
+    box-shadow: none;
+    border: 1px solid #A29A9A;
+    border-radius: 0;
+  }
+  .open-advanced-search {
+    color: #ADADAD;
+    float: right;
+    display: block;
+    margin-top: 7px;
+    text-decoration: none;
+  }
+  .advanced-search-icon {
+    background: url(../images/advanced.png) no-repeat;
+    float: left;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+  }
+
+  // box advanced
+  #advanced-search {
+
+    width: 100%;
+    position: relative;
+    .zf-row {
+      padding: 5px;
+      margin-bottom: 5px;
+      clear: both;
+     // max-width: 100%;
+    }
+    .zf-col {
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+    .zf-label {
+      margin-bottom: 6px;
+      display: block;
+    }
+    .subcategories-label {
+      display: none;
+    }
+    .real-price-info {
+      float: right;
+    }
+    .zf-chosen {
+      min-width: 150px;
+    }
+    .zf-chosen-full, .zf-full-width {
+      width: 100%;
+    }
+    // chosen js
+    select {
+      width: auto;
+    }
+    .chosen-single {
+      box-shadow: none;
+      border-radius: 0;
+      background-image: none;
+    }
+    .chosen-drop {
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+  }
+
+  .box-input {
+    position: relative;
+    display: inline-block;
+    border-collapse: separate;
+    padding: 10px 10px 10px 0;
+    > span,
+    > div {
+      float: left;
+    }
+
+
+  }
+  .zf-open-advanced {
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+  .input-query {
+//    overflow: hidden;
+    padding: 10px 90px 10px 10px;
+  }
+
+  .clearfix {
+
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+
+  }
+  .zf-loading {
+
+    background: url(../images/ajax-loader.gif) no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+  /* Tabs options*/
+  .tab-center {
+    display: table !important;
+    margin: 0 auto !important;
+  }
+
+  .tab-right {
+    float: right;
+  }
+
+  .tab-left {
+    float: left;
+  }
+
+  .tabs-wrapper {
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    visibility: hidden;
+  }
+
+  .tabs-navigation {
+    overflow: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-height: 70px;
+  }
+
+  /* nav tabs */
+  .zf-control-prev, .zf-control-next {
+
+    position: absolute;
+    top: 28%;
+    z-index: 1000;
+    display: block;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    cursor: pointer;
+
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+
+  }
+
+  .zf-control-next {
+    right: 7px;
+    border-color: transparent transparent transparent #FFFFFF;
+    border-width: 10px 0px 10px 14px;
+  }
+
+  .zf-control-prev {
+    left: 7px;
+    border-color: transparent #FFFFFF transparent transparent;
+    border-width: 10px 14px 10px 0;
+  }
+
+  .x1 {
+    width: 150px;
+  }
+  .x2 {
+    width: 200px;
+  }
+
+  .x3 {
+    width: 300px;
+  }
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* checkbox for tabs */
+//  .checkbox-category {
+//    display: inline-block;
+//    padding: 0;
+//    margin: 0;
+//  }
+
+  /* radio categories */
+  .radio-category {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+
+}
+
+// popup
+.advanced-popup-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(10, 10, 10, 0.07);
+  background-clip: padding-box;
+
+  header {
+    padding: 1.25em 1.5em;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  header h3,
+  header h4 {
+    margin: 0;
+  }
+
+  .advanced-popup-inner {
+    padding: 1em 1.5em 1.5em 1.5em;
+//    max-height: 600px;
+//    overflow-y: auto;
+  }
+
+  footer {
+    padding: 1em;
+    border-top: 1px solid #e5e5e5;
+    background: rgba(0, 0, 0, 0.02);
+    text-align: right;
+  }
+
+  a.advanced-popup-close {
+    line-height: 1;
+    font-size: 1.5em;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-decoration: none;
+    color: #989999;
+  }
+
+  a.advanced-popup-close:hover {
+    color: #585858;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    transition: color 1s ease;
+  }
+
+}
+
+
+/* date picker*/
+.ui-datepicker {
+  font-size: medium;
+}
+/* select */
+
+.ms-parent {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.ms-choice {
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #D5D5D5;
+  text-align: left;
+  white-space: nowrap;
+//  line-height: 26px;
+  color: #444;
+  text-decoration: none;
+
+  background-color: #fff;
+
+  &.disabled {
+
+    background-color: #f4f4f4;
+    background-image: none;
+    border: 1px solid #ddd;
+    cursor: default;
+
+  }
+
+  > span {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding-left: 8px;
+
+    &.placeholder {
+      color: #999;
+    }
+
+  }
+
+  > div {
+    position: absolute;
+    top: 49%;
+    right: 0.7em;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    border-color: #CACACA transparent transparent;
+    border-width: 6px 6px 0px;
+
+    &.open {
+
+      top: 47%;
+      border-style: solid;
+      width: 0px;
+      height: 0px;
+      line-height: 0px;
+      border-width: 0px 6px 6px 6px;
+      border-color: transparent transparent #CACACA transparent;
+    }
+
+  }
+
+}
+
+.ms-drop {
+  width: auto;
+  min-width: 180px;
+  overflow: auto;
+  max-height: 500px;
+  display: none;
+  margin-top: -1px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  border: 1px solid #D5D5D5;
+
+  &.bottom {
+    top: 100%;
+  }
+
+  &.top {
+    bottom: 100%;
+  }
+
+  ul {
+
+    overflow: auto;
+    margin: 0;
+    padding: 5px;
+    > li {
+      list-style: none;
+      display: list-item;
+      background-image: none;
+      position: static;
+      margin: 0;
+      &.multiple {
+
+        display: block;
+        float: left;
+
+        label {
+          width: 100%;
+          display: block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+      }
+
+      label {
+
+        font-weight: normal;
+        display: block;
+        white-space: nowrap;
+
+        &.optgroup {
+          font-weight: bold;
+        }
+
+      }
+
+      &.group {
+        clear: both;
+      }
+
+      .disabled {
+        opacity: .35;
+        filter: Alpha(Opacity=35);
+      }
+    }
+
+  }
+
+  input[type="checkbox"] {
+    vertical-align: middle;
+    float: left;
+  }
+
+  .ms-no-results {
+    display: none;
+  }
+}
+
+
+.ms-search {
+  display: inline-block;
+  margin: 0;
+  min-height: 26px;
+  padding: 4px;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 10000;
+}
+
+/*suggest title*/
+.twitter-typeahead {
+  width: 100%;
+}
+
+.twitter-typeahead .tt-hint {
+  color: #999999;
+}
+.twitter-typeahead .tt-input {
+
+}
+.twitter-typeahead .tt-input[disabled],
+.twitter-typeahead .tt-input[readonly],
+fieldset[disabled] .twitter-typeahead .tt-input {
+  cursor: not-allowed;
+  background-color: #eeeeee !important;
+}
+
+.tt-dropdown-menu {
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 160px;
+  width: 100%;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+
+  .tt-suggestion {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+    &.tt-cursor {
+      text-decoration: none;
+      outline: 0;
+      background-color: #f5f5f5;
+      color: #262626;
+    }
+
+    &.tt-cursor a {
+      color: #262626;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+}

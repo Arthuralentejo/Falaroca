@@ -1,0 +1,606 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ZF WordPress Category Search\n"
+"POT-Creation-Date: 2021-05-07 14:59+0700\n"
+"PO-Revision-Date: 2021-05-07 14:58+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: zf-wrodpress-category-search.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/admin/options-custom-post-type.php:12
+msgid "Available Elements (Taxonomies)"
+msgstr ""
+
+#: inc/admin/options-custom-post-type.php:34
+msgid "Category"
+msgstr ""
+
+#: inc/admin/options-custom-post-type.php:51
+msgid ""
+"You must choose exactly \"categories\" element by moving it from \"Available "
+"Elements\" box to display at the frontend. It is to distinguish categories "
+"of custom post type that. so if a custom post type that doesn't have any "
+"taxonomies make it as categories that mean it is beyond this plugin. Leave "
+"blank if you only want to search with advanced box"
+msgstr ""
+
+#: inc/admin/options-custom-post-type.php:55
+msgid "Append to advanced search box"
+msgstr ""
+
+#: inc/admin/options-custom-post-type.php:71
+msgid "Move elements that you want to advanced search box"
+msgstr ""
+
+#: inc/admin/options-custom-post-type.php:74
+msgid "Search multiple for"
+msgstr ""
+
+#: inc/admin/options.php:42
+msgid "General Settings"
+msgstr ""
+
+#: inc/admin/options.php:51 inc/admin/options.php:55
+msgid "Awesome Font"
+msgstr ""
+
+#: inc/admin/options.php:58
+msgid "Using cdn"
+msgstr ""
+
+#: inc/admin/options.php:61
+msgid "Using local"
+msgstr ""
+
+#: inc/admin/options.php:64 inc/admin/options.php:83 inc/admin/options.php:129
+msgid "Disable"
+msgstr ""
+
+#: inc/admin/options.php:65
+msgid ""
+"Using CDN, the file hosted on MAXCDN, so it will load file faster<br> Using "
+"Local, the file will be loaded from the plugin<br>\n"
+"                                    Disable, only use this option when you "
+"know that it was loaded before by another the plugins/themes"
+msgstr ""
+
+#: inc/admin/options.php:73
+msgid "Caching category"
+msgstr ""
+
+#: inc/admin/options.php:77
+msgid "Enable category cache"
+msgstr ""
+
+#: inc/admin/options.php:80 inc/admin/options.php:126
+msgid "Enable"
+msgstr ""
+
+#: inc/admin/options.php:84
+msgid "Caching child categories for tab/radio option."
+msgstr ""
+
+#: inc/admin/options.php:87 inc/admin/options.php:88
+msgid "Cache time"
+msgstr ""
+
+#: inc/admin/options.php:89
+msgid "(in minutes)"
+msgstr ""
+
+#: inc/admin/options.php:90
+msgid "The cache time to refresh data again"
+msgstr ""
+
+#: inc/admin/options.php:98 inc/admin/options.php:102
+msgid "Skins"
+msgstr ""
+
+#: inc/admin/options.php:111
+msgid "Choose skin for the plugin (default is dark)"
+msgstr ""
+
+#: inc/admin/options.php:118 inc/admin/options.php:123
+msgid "Enable AutoSuggest"
+msgstr ""
+
+#: inc/admin/options.php:130
+msgid ""
+"The Auto suggest query like google suggest while you type into the field."
+msgstr ""
+
+#: inc/admin/options.php:133
+msgid "Limit suggest"
+msgstr ""
+
+#: inc/admin/options.php:134
+msgid "Limit number of suggestions"
+msgstr ""
+
+#: inc/admin/options.php:142 inc/admin/options.php:147
+msgid "Custom post type"
+msgstr ""
+
+#: inc/admin/options.php:152
+msgid "Post"
+msgstr ""
+
+#: inc/admin/options.php:160
+msgid "Select any custom post type to configure."
+msgstr ""
+
+#: inc/admin/options.php:173 inc/admin/options.php:177
+msgid "Match type"
+msgstr ""
+
+#: inc/admin/options.php:180
+msgid "AND"
+msgstr ""
+
+#: inc/admin/options.php:182
+msgid "OR"
+msgstr ""
+
+#: inc/admin/options.php:185
+msgid ""
+"AND: Display posts that have \"all\" of these taxonomy values(categories) "
+"<br> OR: Display posts that have these these taxonomy values(categories): "
+msgstr ""
+
+#: inc/admin/options.php:193 inc/admin/options.php:197
+msgid "Display category"
+msgstr ""
+
+#: inc/admin/options.php:200
+msgid "Tabs"
+msgstr ""
+
+#: inc/admin/options.php:202
+msgid "Dropdown"
+msgstr ""
+
+#: inc/admin/options.php:204
+msgid "Radio"
+msgstr ""
+
+#: inc/admin/options.php:206
+msgid "Display categories as tabs/dropdown/radio."
+msgstr ""
+
+#: inc/admin/options.php:213 inc/admin/options.php:217
+msgid "Tab alignment"
+msgstr ""
+
+#: inc/admin/options.php:220
+msgid "Left"
+msgstr ""
+
+#: inc/admin/options.php:222
+msgid "Center"
+msgstr ""
+
+#: inc/admin/options.php:224
+msgid "Right"
+msgstr ""
+
+#: inc/admin/options.php:226
+msgid "The alignment of tabs. (Left/Center/Right)"
+msgstr ""
+
+#: inc/admin/options.php:234 inc/admin/options.php:238
+msgid "Show tab all"
+msgstr ""
+
+#: inc/admin/options.php:241 inc/admin/options.php:429
+#: inc/admin/options.php:446 inc/admin/options.php:463
+#: inc/admin/options.php:480 inc/admin/options.php:497
+#: inc/admin/options.php:514
+msgid "Show"
+msgstr ""
+
+#: inc/admin/options.php:244 inc/admin/options.php:432
+#: inc/admin/options.php:449 inc/admin/options.php:466
+#: inc/admin/options.php:483 inc/admin/options.php:500
+#: inc/admin/options.php:517
+msgid "Hide"
+msgstr ""
+
+#: inc/admin/options.php:245
+msgid "Show tab all categories."
+msgstr ""
+
+#: inc/admin/options.php:252 inc/admin/options.php:256
+msgid "Icon tab all"
+msgstr ""
+
+#: inc/admin/options.php:257 inc/admin/taxonomy.php:85
+#: inc/admin/taxonomy.php:129 inc/admin/taxonomy.php:141
+msgid "Insert Icon"
+msgstr ""
+
+#: inc/admin/options.php:258
+msgid ""
+"Icon for tab all categories, click on insert icon button to add an awesome "
+"font code, or you also can enter a the image url. Add icon for each tab "
+"category, you go to categories management of custom post type, you can see a "
+"the category icon option, choosen an awesome font or enter an image url. <br/"
+"> For example, the custom post type is post, you go to Posts -> Categories"
+msgstr ""
+
+#: inc/admin/options.php:266 inc/admin/options.php:270
+msgid "Order By"
+msgstr ""
+
+#: inc/admin/options.php:273
+msgid "ID"
+msgstr ""
+
+#: inc/admin/options.php:275
+msgid "Name"
+msgstr ""
+
+#: inc/admin/options.php:277
+msgid "Count"
+msgstr ""
+
+#: inc/admin/options.php:280
+msgid ""
+"Specify how to sort the display categories order by ID, Name, Count. This "
+"option only be applied when you chose a taxonomy for category box"
+msgstr ""
+
+#: inc/admin/options.php:288 inc/admin/options.php:292
+#: inc/form-functions.php:355
+msgid "Order"
+msgstr ""
+
+#: inc/admin/options.php:296
+msgid "Asc"
+msgstr ""
+
+#: inc/admin/options.php:298
+msgid "Desc"
+msgstr ""
+
+#: inc/admin/options.php:301
+msgid ""
+"Specify the sort order used to display categories Asc or Desc. This option "
+"only be applied when you chose a taxonomy for category box"
+msgstr ""
+
+#: inc/admin/options.php:309 inc/admin/options.php:313
+msgid "Exclude"
+msgstr ""
+
+#: inc/admin/options.php:316
+msgid ""
+"Category IDs, separated by commas. This option only be applied when you "
+"chose a taxonomy for category box"
+msgstr ""
+
+#: inc/admin/options.php:323 inc/admin/options.php:327
+msgid "Limit number of categories"
+msgstr ""
+
+#: inc/admin/options.php:330
+msgid ""
+"Limit number of categories is displayed, leave blank is unlimited. This "
+"option only be applied when you chose a taxonomy for category box"
+msgstr ""
+
+#: inc/admin/options.php:337 inc/admin/options.php:341
+msgid "Hide Empty"
+msgstr ""
+
+#: inc/admin/options.php:344
+msgid "Yes"
+msgstr ""
+
+#: inc/admin/options.php:347
+msgid "No"
+msgstr ""
+
+#: inc/admin/options.php:348
+msgid ""
+"Will not display empty category. This option only be applied when you chose "
+"a taxonomy for category box"
+msgstr ""
+
+#: inc/admin/options.php:354 inc/admin/options.php:358
+msgid "Submit label"
+msgstr ""
+
+#: inc/admin/options.php:360
+msgid "Label of submit button."
+msgstr ""
+
+#: inc/admin/options.php:366 inc/admin/options.php:370
+msgid "Placeholder input"
+msgstr ""
+
+#: inc/admin/options.php:372
+msgid "Placeholder of input query."
+msgstr ""
+
+#: inc/admin/options.php:379 inc/admin/options.php:383
+msgid "Show Advanced button at"
+msgstr ""
+
+#: inc/admin/options.php:386
+msgid "In"
+msgstr ""
+
+#: inc/admin/options.php:388
+msgid "Out"
+msgstr ""
+
+#: inc/admin/options.php:391
+msgid "Show open advanced button inside or outside input query"
+msgstr ""
+
+#: inc/admin/options.php:400 inc/admin/options.php:404
+msgid "Advanced button type"
+msgstr ""
+
+#: inc/admin/options.php:407
+msgid "Icon only"
+msgstr ""
+
+#: inc/admin/options.php:409
+msgid "Text only"
+msgstr ""
+
+#: inc/admin/options.php:411
+msgid "Icon vs Text"
+msgstr ""
+
+#: inc/admin/options.php:414
+msgid "Show advanced button with icon or text or both"
+msgstr ""
+
+#: inc/admin/options.php:422 inc/admin/options.php:426
+msgid "Show Subcategories"
+msgstr ""
+
+#: inc/admin/options.php:433
+msgid ""
+"Show/Hide subcategories search, when click on a tab/radio item then it will "
+"get all child categories of it."
+msgstr ""
+
+#: inc/admin/options.php:439 inc/admin/options.php:443
+msgid "Show Price"
+msgstr ""
+
+#: inc/admin/options.php:450
+msgid ""
+"Show/Hide price search. it can only display if it supported by this plugin, "
+"or hook to this plugin by another plugins/themes."
+msgstr ""
+
+#: inc/admin/options.php:456 inc/admin/options.php:460
+msgid "Show Date"
+msgstr ""
+
+#: inc/admin/options.php:467
+msgid "Show/Hide date range search."
+msgstr ""
+
+#: inc/admin/options.php:473 inc/admin/options.php:477
+msgid "Show Author"
+msgstr ""
+
+#: inc/admin/options.php:484
+msgid "Show/Hide author search."
+msgstr ""
+
+#: inc/admin/options.php:490 inc/admin/options.php:494
+msgid "Show Orderby"
+msgstr ""
+
+#: inc/admin/options.php:501
+msgid "Show/Hide order by search."
+msgstr ""
+
+#: inc/admin/options.php:507 inc/admin/options.php:511
+msgid "Show Order"
+msgstr ""
+
+#: inc/admin/options.php:518
+msgid "Show/Hide order(sort)."
+msgstr ""
+
+#: inc/admin/options.php:541 inc/admin/taxonomy.php:98
+msgid "Insert Icon."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: inc/admin/taxonomy.php:79 inc/core.php:279 inc/widget.php:17
+#: inc/widget.php:20
+msgid "ZF WordPress Category Search"
+msgstr ""
+
+#: inc/admin/taxonomy.php:82 inc/admin/taxonomy.php:125
+msgid "Category icon"
+msgstr ""
+
+#: inc/admin/taxonomy.php:88 inc/admin/taxonomy.php:132
+msgid "Select a font icon from awesome font ."
+msgstr ""
+
+#: inc/form-functions.php:31
+msgid "All Categories  "
+msgstr ""
+
+#: inc/form-functions.php:52 inc/functions.php:698
+msgid "All Categories"
+msgstr ""
+
+#: inc/form-functions.php:95
+msgid "Sub Categories"
+msgstr ""
+
+#: inc/form-functions.php:185 inc/form-functions.php:187
+msgid "Any "
+msgstr ""
+
+#: inc/form-functions.php:224
+msgid "Price Range"
+msgstr ""
+
+#: inc/form-functions.php:225
+msgid "Price"
+msgstr ""
+
+#: inc/form-functions.php:248
+msgid "Date Range"
+msgstr ""
+
+#: inc/form-functions.php:250
+msgid "From"
+msgstr ""
+
+#: inc/form-functions.php:252 inc/form-functions.php:255
+msgid "None"
+msgstr ""
+
+#: inc/form-functions.php:253
+msgid "To"
+msgstr ""
+
+#: inc/form-functions.php:275 inc/form-functions.php:314
+msgid "Author"
+msgstr ""
+
+#: inc/form-functions.php:282
+msgid "Select Authors"
+msgstr ""
+
+#: inc/form-functions.php:283
+msgid "Any"
+msgstr ""
+
+#: inc/form-functions.php:303
+msgid "Sort By"
+msgstr ""
+
+#: inc/form-functions.php:311 inc/form-functions.php:321
+msgid "Default"
+msgstr ""
+
+#: inc/form-functions.php:312
+msgid "Date"
+msgstr ""
+
+#: inc/form-functions.php:313 inc/form-functions.php:322 inc/widget.php:37
+msgid "Title"
+msgstr ""
+
+#: inc/form-functions.php:315
+msgid "Comment count"
+msgstr ""
+
+#: inc/form-functions.php:323
+msgid "Popularity"
+msgstr ""
+
+#: inc/form-functions.php:324
+msgid "Rating"
+msgstr ""
+
+#: inc/form-functions.php:325
+msgid "Newness"
+msgstr ""
+
+#: inc/form-functions.php:326
+msgid "Price: low to high"
+msgstr ""
+
+#: inc/form-functions.php:327
+msgid "Price: high to low"
+msgstr ""
+
+#: inc/form-functions.php:337
+msgid "Order by"
+msgstr ""
+
+#: inc/form-functions.php:359
+msgid "Descending"
+msgstr ""
+
+#: inc/form-functions.php:360
+msgid "Ascending"
+msgstr ""
+
+#: inc/functions.php:379
+msgid "Search"
+msgstr ""
+
+#: inc/functions.php:380
+msgid "Search ..."
+msgstr ""
+
+#: inc/functions.php:619 templates/form.php:52
+msgid "Advanced search"
+msgstr ""
+
+#: inc/functions.php:641
+msgid ""
+"Custom post type does not exist or it has deactived, check custom post type "
+"again, in the setting page"
+msgstr ""
+
+#: inc/functions.php:684
+msgid "Not found template"
+msgstr ""
+
+#: inc/functions.php:697
+msgid "Select category"
+msgstr ""
+
+#: inc/widget.php:18
+msgid ""
+"It is a WordPress advanced search box, support WordPress, WooCommerce, "
+"custom post type, multiple taxonomies"
+msgstr ""
+
+#: inc/widget.php:45
+msgid "Setting page"
+msgstr ""
+
+#: inc/widget.php:47
+msgid "Click here"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://codecanyon.net/item/zf-wordpress-category-search/9168662"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"ZF WordPress Category Search is advanced search box display categories as "
+"radio/tab/dropdown with advanced fields, auto suggest like google, support "
+"custom post type, taxonomies, WooCommerce, Easy Digital Downloads."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ZuFusion"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://zufusion.com"
+msgstr ""

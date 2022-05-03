@@ -1,0 +1,313 @@
+<?php
+
+/**
+ * ======================================================================================================
+ * Shortcode structure:
+ * /core/shortcodes/my_shortcode/
+ * - /assets/ 	- for images, JS, styles etc
+ * - config.php - config file where we specify shortcode params
+ * - modal.php 	- here we run modal builder
+ * - init.php 	- here we register a shortcode through add_shortcode hook
+ *              	all shortcodes have apply_filters( 'my_shortcode', $output ) hook to filter output
+ * - view.php 	- shortcode output / view template
+ * ======================================================================================================
+ **/
+
+/**
+ * ======================================================================================================
+ * Shortcode override:
+ * plugin allows to override view templates in a theme (if you dont want / can't use filters).
+ * just create "fruitful-shortcodes/my_shortcode/view.php" file in your theme directory to override template
+ * ======================================================================================================
+ **/
+
+/**
+ * ======================================================================================================
+ * An example of available option types to build shortcode forms in a backend
+ * ======================================================================================================
+ **/
+
+$cfg = array(
+
+	// shortcode name
+	'shortcode' => 'fruitful_accordion_tabs',
+
+	// array of available fields
+	'fields' => array(
+
+		// field type text
+		array(
+			// input type
+			'type' => 'textfield', 
+			// input name, will be used as shortcode param name
+			'name' => 'title',
+			// input label
+			'label' => esc_html__( 'Input title', 'ff_shortcodes'),
+			// default value. value will be used as shortcode param value
+			'value' => esc_html__( 'Default value', 'ff_shortcodes'),
+			// field description
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+			// heading before input
+			'heading' => esc_html__( 'My heading', 'ff_shortcodes'),
+		),
+
+		// field type header
+		array(
+			'type' => 'header',
+			'title' => esc_html__( 'Just a header title', 'ff_shortcodes'),
+		),
+
+		// field type hidden
+		array(
+			'type' => 'hidden',
+			'name' => 'some_number',
+			'value' => 10,
+		),
+
+		// textarea
+		array(
+			'type' => 'textarea',
+			'name' => 'content',
+			'label' => esc_html__( 'Input title', 'ff_shortcodes'),
+			'value' => esc_html__( 'Default value', 'ff_shortcodes'),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// checkbox. param value will be "yes"
+		array(
+			'type' => 'checkbox',
+			'name' => 'check_me',
+			'label' => esc_html__( 'Input title', 'ff_shortcodes'),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// dropdown
+		array(
+			'type' => 'dropdown',
+			'name' => 'choose_me',
+			'label' => esc_html__( 'Input title', 'ff_shortcodes'),
+			'default' => 'default_value',
+			'value' => array(
+				'some_value_1' => esc_html__( 'Some title 1', 'ff_shortcodes'),
+				'some_value_2' => esc_html__( 'Some title 2', 'ff_shortcodes'),
+				'some_value_3' => esc_html__( 'Some title 3', 'ff_shortcodes'),
+			),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// radios
+		array(
+			'type' => 'radio',
+			'name' => 'choose_me',
+			'label' => esc_html__( 'Input title', 'ff_shortcodes'),
+			'default' => 'default_value',
+			'value' => array(
+				'some_value_1' => esc_html__( 'Some title 1', 'ff_shortcodes'),
+				'some_value_2' => esc_html__( 'Some title 2', 'ff_shortcodes'),
+				'some_value_3' => esc_html__( 'Some title 3', 'ff_shortcodes'),
+			),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// icon picker
+		array(
+			'type' => 'icon_picker',
+			'name' => 'icon',
+			'label' => esc_html__( 'Choose an icon', 'ff_shortcodes'),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// color picker
+		array(
+			'type' => 'color_picker',
+			'name' => 'text_color',
+			'label' => esc_html__( 'Pick a color of the text', 'ff_shortcodes'),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+		// switch
+		array(
+			'type' => 'switch',
+			'name' => 'enable_some_thing',
+			'default' => 'on',
+			'text_on' => esc_html__( 'on', 'ff_shortcodes'),
+			'text_off' => esc_html__( 'off', 'ff_shortcodes'),
+		),
+
+		// align picker
+		array(
+			'type' => 'align_picker',
+			'name' => 'text_align',
+			'default' => 'left',
+			'label' => esc_html__( 'Text align', 'ff_shortcodes'),
+		),
+
+		// unit
+		array(
+			'type' => 'text_unit',
+			'name' => 'font_size',
+			'unit' => 'px',
+			'value' => '100',
+			'label' => esc_html__( 'Font size', 'ff_shortcodes'),
+		),
+
+		// single image picker. adds image / attachment ID as param value
+		array(
+			'type' => 'image',
+			'name' => 'image',
+			'label' => esc_html__( 'Choose an icon', 'ff_shortcodes'),
+			'desc' => esc_html__( 'Description of this field (optional)', 'ff_shortcodes'),
+		),
+
+	)
+);
+
+/**
+ * ======================================================================================================
+ * An example of tabbed forms
+ * ======================================================================================================
+ **/
+
+$cfg = array(
+	'shortcode' => 'fruitful_btn',
+	'tabs' => true,
+	'general' => array(
+		'tab_title' => esc_html__( 'My Settings Tab #1', 'ff_shortcodes'),
+		'fields' => array(
+
+			/** your fields here **/
+
+		)
+	),
+	'style' => array(
+		'tab_title' => esc_html__( 'My Settings Tab #2', 'ff_shortcodes'),
+		'fields' => array(
+
+			/** your fields here **/
+
+		)
+	),
+);
+
+/**
+ * ======================================================================================================
+ * An example of dynamic fields builder (can be used for Accordions / Tabs etc)
+ * allows to build shortcodes with dynamic number of child shortcodes like following:
+ * [fruitful_tabs]
+ * [tab title="My tab title"]Tab content[/tab]
+ * [tab title="My tab title 2"]Tab content 2[/tab]
+ * [tab title="My tab title 3"]Tab content 3[/tab]
+ * [tab title="My tab title N"]Tab content N[/tab]
+ * [/fruitful_tabs]
+ * ======================================================================================================
+ **/
+
+$cfg = array(
+	// outer shortcode
+	'shortcode' => 'fruitful_accordion_tabs',
+	'fields' => array(
+		array(
+			'type' => 'dynamic',
+			'count' => 3,
+			// inner shortcode
+			'shortcode' => 'fruitful_tab',
+			'row_title' => esc_html__( 'Progress bar', 'ff_shortcodes'),
+			'fields' => array(
+
+				/** your fields here **/
+
+				array(
+					'type' => 'textfield',
+					'name' => 'title',
+					'label' => esc_html__( 'Tab title', 'ff_shortcodes'),
+					'value' => esc_html__( 'My panel title', 'ff_shortcodes'),
+				),
+				array(
+					'type' => 'textarea',
+					'name' => 'content',
+					'label' => esc_html__( 'Tab content', 'ff_shortcodes'),
+					'value' => esc_html__( 'Type here your text inside panel', 'ff_shortcodes'),
+				),
+
+			),
+		),
+	)
+);
+
+/**
+ * ======================================================================================================
+ * An example of nested shortcodes
+ * allows to build shortcodes with fixed number of child shortcodes like following:
+ * [fruitful_row]
+ * [col size="col-md-6"]Some content here[/col]
+ * [col size="col-md-6"]Some content here[/col]
+ * [/fruitful_row]
+ * ======================================================================================================
+ **/
+
+$cfg = array(
+	// parent shortcode
+	'shortcode' => 'fruitful_ibox_row',
+	'fields' => array(
+		array(
+			'type' => 'child',
+			// child shortcode name
+			'shortcode' => 'fruitful_ibox',
+			'fields' => array(
+
+				array(
+					'type' => 'header',
+					'title' => esc_html__( 'Left column content', 'ff_shortcodes'),
+				),
+				array(
+					'type' => 'hidden',
+					'name' => 'column',
+					'value' => 'ffs-two-one',
+				),
+				array(
+					'type' => 'textfield',
+					'name' => 'title',
+					'label' => esc_html__( 'Column title', 'ff_shortcodes'),
+					'value' => esc_html__( 'Column title', 'ff_shortcodes'),
+				),
+				array(
+					'type' => 'textarea',
+					'name' => 'content',
+					'label' => esc_html__( 'Column content', 'ff_shortcodes'),
+					'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros leo, faucibus et sapien vitae, facilisis placerat arcu. Duis fringilla, risus vitae pulvinar malesuada, ante ex eleifend leo, mollis laoreet lacus ligula sit amet neque.'
+				),
+
+			),
+		),
+		array(
+			'type' => 'child',
+			// child shortcode name
+			'shortcode' => 'fruitful_ibox',
+			'fields' => array(
+
+				array(
+					'type' => 'header',
+					'title' => esc_html__( 'Right column content', 'ff_shortcodes'),
+				),
+				array(
+					'type' => 'hidden',
+					'name' => 'column',
+					'value' => 'ffs-two-one',
+				),
+				array(
+					'type' => 'textfield',
+					'name' => 'title',
+					'label' => esc_html__( 'Column title', 'ff_shortcodes'),
+					'value' => esc_html__( 'Column title', 'ff_shortcodes'),
+				),
+				array(
+					'type' => 'textarea',
+					'name' => 'content',
+					'label' => esc_html__( 'Column content', 'ff_shortcodes'),
+					'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros leo, faucibus et sapien vitae, facilisis placerat arcu. Duis fringilla, risus vitae pulvinar malesuada, ante ex eleifend leo, mollis laoreet lacus ligula sit amet neque.'
+				),
+
+			),
+		),
+	)
+);

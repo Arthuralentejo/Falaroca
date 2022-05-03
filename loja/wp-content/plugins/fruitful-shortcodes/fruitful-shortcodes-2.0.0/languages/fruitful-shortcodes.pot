@@ -1,0 +1,754 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fruitful Shortcodes\n"
+"POT-Creation-Date: 2018-05-02 15:27+0200\n"
+"PO-Revision-Date: 2018-05-02 15:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: core/controller/backend-controller.php:228
+msgid "Get Pro Version"
+msgstr ""
+
+#: core/controller/backend-controller.php:236
+msgid "Documentation & FAQ"
+msgstr ""
+
+#: core/controller/backend-controller.php:237
+msgid "Support"
+msgstr ""
+
+#: core/helper/admin-options.php:204
+msgid "on"
+msgstr ""
+
+#: core/helper/admin-options.php:205
+msgid "off"
+msgstr ""
+
+#: core/helper/admin-options.php:757
+msgid "Cancel"
+msgstr ""
+
+#: core/helper/admin-options.php:758
+msgid "Add"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:10
+msgid "Alert"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:11
+msgid "Add alert box"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:17
+msgid "Alert style"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:19
+#: core/shortcodes/fruitful_btn/config.php:85
+#: core/shortcodes/fruitful_pbar/config.php:39
+msgid "Success"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:20
+#: core/shortcodes/fruitful_btn/config.php:84
+#: core/shortcodes/fruitful_pbar/config.php:40
+msgid "Info"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:21
+#: core/shortcodes/fruitful_btn/config.php:87
+#: core/shortcodes/fruitful_pbar/config.php:41
+msgid "Warning"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:22
+#: core/shortcodes/fruitful_btn/config.php:88
+#: core/shortcodes/fruitful_pbar/config.php:42
+msgid "Danger"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:28
+msgid "Alert text"
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:29
+msgid "Oh snap! Change a few things up and try submitting again."
+msgstr ""
+
+#: core/shortcodes/fruitful_alerts/config.php:34
+msgid "Shortcode ID"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:10
+#: core/shortcodes/fruitful_btn/config.php:113
+msgid "Button"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:11
+msgid "Add button"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:15
+msgid "General"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:20
+msgid "Button label"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:21
+msgid "Click me"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:22
+msgid "type here button label"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:27
+#: core/shortcodes/fruitful_dbox/config.php:38
+msgid "Button link"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:33
+msgid "Link target"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:35
+msgid "Current window"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:36
+msgid "New window"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:42
+msgid "Button Icon"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:43
+#: core/shortcodes/fruitful_btn/config.php:53
+msgid "Icon can be applied only for \"Button\" or \"Link\" button type"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:48
+msgid "Icon position"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:50
+msgid "Right"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:51
+msgid "Left"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:58
+msgid "Button ID"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:64
+#: core/shortcodes/fruitful_btn/config.php:95
+#: core/shortcodes/fruitful_recent_posts/config.php:35
+#: core/shortcodes/fruitful_recent_posts/config.php:41
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:41
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:47
+msgid "Style"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:69
+msgid "Size"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:71
+msgid "Mini"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:72
+msgid "Small"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:73
+msgid "Large"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:74
+msgid "Extra Large"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:80
+#: core/shortcodes/fruitful_sep/config.php:24
+msgid "Color"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:82
+msgid "Default"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:83
+msgid "Primary"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:86
+msgid "Secondary"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:89
+msgid "Inverse"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:97
+msgid "Filled"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:98
+msgid "Outline"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:104
+msgid "Border Radius"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:111
+msgid "Type"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:114
+msgid "Link"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:115
+msgid "Input"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:116
+msgid "Submit"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:122
+msgid "State"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:124
+msgid "Active"
+msgstr ""
+
+#: core/shortcodes/fruitful_btn/config.php:125
+msgid "Disabled"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:10
+msgid "Promo Text"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:11
+msgid "Add promo text box"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:17
+msgid "Small Heading"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:22
+msgid "Heading"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:27
+msgid "Text"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:28
+msgid "Hello, world! This is Fruitful Shortcodes plugin."
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:33
+msgid "Button title"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:43
+msgid "Block style"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:45
+msgid "Style 1"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:46
+msgid "Style 2"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:47
+msgid "Style 3"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:48
+msgid "Style 4"
+msgstr ""
+
+#: core/shortcodes/fruitful_dbox/config.php:49
+msgid "Style 5"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:10
+#: core/shortcodes/fruitful_recent_posts/config.php:50
+msgid "Columns"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:11
+msgid "Add columns grid"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:18
+#: core/shortcodes/fruitful_ibox_row/config.php:41
+msgid "Column"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:24
+msgid "Column width"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:26
+msgid "1/2"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:27
+msgid "1/3"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:28
+msgid "2/3"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:29
+msgid "1/4"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:30
+msgid "3/4"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:31
+msgid "1/5"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:40
+msgid "Column title"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:46
+msgid "Column content"
+msgstr ""
+
+#: core/shortcodes/fruitful_ibox_row/config.php:47
+msgid "Type here your text inside column"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:10
+#: core/shortcodes/fruitful_pbar/config.php:18
+msgid "Progress bar"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:11
+msgid "Add progress bar"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:24
+msgid "Bar title"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:25
+msgid "My title"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:30
+msgid "Bar width"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:37
+msgid "Bar type"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:48
+msgid "Icon"
+msgstr ""
+
+#: core/shortcodes/fruitful_pbar/config.php:54
+msgid "Stripped"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:10
+msgid "Recent posts"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:11
+msgid "Add recent posts"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:15
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:15
+msgid "Query"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:21
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:27
+msgid "Posts count"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:27
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:33
+msgid "Categories"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:28
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:34
+msgid "Explode multiple categories by comma"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:43
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:49
+msgid "Clean"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:44
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:50
+msgid "Bordered"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:52
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:128
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:139
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:150
+msgid "One"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:53
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:129
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:140
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:151
+msgid "Two"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:54
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:130
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:141
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:152
+msgid "Three"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:55
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:131
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:142
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:153
+msgid "Four"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:62
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:63
+msgid "Display thumbnails"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:67
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:68
+msgid "Thumbnail width"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:74
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:75
+msgid "Thumbnail height"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:81
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:82
+msgid "Thumbnail border radius"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:89
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:90
+msgid "Display post date"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:95
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:96
+msgid "Display header"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:101
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:102
+msgid "Display excerpt"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:106
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:107
+msgid "Excerpt length"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/config.php:114
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:115
+msgid "Display meta data"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/view.php:82
+#: core/shortcodes/fruitful_recent_posts_slider/view.php:88
+msgid "by"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts/view.php:83
+#: core/shortcodes/fruitful_recent_posts_slider/view.php:89
+msgid "in"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:10
+msgid "Posts slider"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:11
+#: ff-shortcodes.php:98
+msgid "Add slider"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:21
+msgid "Block title"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:57
+msgid "Display navigation"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:121
+msgid "Responsive"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:126
+msgid "Visible slides (desktop screen)"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:137
+msgid "Visible slides (small screen)"
+msgstr ""
+
+#: core/shortcodes/fruitful_recent_posts_slider/config.php:148
+msgid "Visible slides (extra small screen)"
+msgstr ""
+
+#: core/shortcodes/fruitful_sep/config.php:10
+msgid "Separator"
+msgstr ""
+
+#: core/shortcodes/fruitful_sep/config.php:11
+msgid "Add a gap"
+msgstr ""
+
+#: core/shortcodes/fruitful_sep/config.php:17
+msgid "Separator height"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:10
+msgid "Tabs"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:11
+msgid "Add horizontal tabs"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:15
+msgid "Tabs Content"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:21
+#: core/shortcodes/fruitful_tabs/config.php:31
+msgid "My tab title"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:30
+msgid "Tab title"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:36
+msgid "Tab content"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:37
+msgid "Type here your text inside tab"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:45
+msgid "Settings"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:50
+msgid "Tabs type"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:52
+msgid "Horizontal tabs"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:53
+msgid "Vertical tabs"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:54
+msgid "Accordion"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:60
+msgid "Responsive break"
+msgstr ""
+
+#: core/shortcodes/fruitful_tabs/config.php:62
+msgid "type here a screen width when tabs become responsive"
+msgstr ""
+
+#: core/view/backend/button.php:2 core/view/backend/modal/window.php:9
+msgid "Fruitful Shortcodes"
+msgstr ""
+
+#: core/view/backend/modal/window.php:21
+msgid "Search"
+msgstr ""
+
+#: ff-shortcodes.php:53
+msgid "Benefits"
+msgstr ""
+
+#: ff-shortcodes.php:54
+msgid "Add benefits grid"
+msgstr ""
+
+#: ff-shortcodes.php:57
+msgid "Box"
+msgstr ""
+
+#: ff-shortcodes.php:58
+msgid "Add a box"
+msgstr ""
+
+#: ff-shortcodes.php:61
+msgid "Chart"
+msgstr ""
+
+#: ff-shortcodes.php:62
+msgid "Add a pie chart"
+msgstr ""
+
+#: ff-shortcodes.php:65
+msgid "Countdown"
+msgstr ""
+
+#: ff-shortcodes.php:66
+msgid "Add a countdown"
+msgstr ""
+
+#: ff-shortcodes.php:69
+msgid "Counters"
+msgstr ""
+
+#: ff-shortcodes.php:70
+msgid "Add counters"
+msgstr ""
+
+#: ff-shortcodes.php:73
+msgid "Logos carousel"
+msgstr ""
+
+#: ff-shortcodes.php:74
+msgid "Add logos carousel"
+msgstr ""
+
+#: ff-shortcodes.php:77
+msgid "Odometer"
+msgstr ""
+
+#: ff-shortcodes.php:78
+msgid "Add an odometer"
+msgstr ""
+
+#: ff-shortcodes.php:81
+msgid "Parallax"
+msgstr ""
+
+#: ff-shortcodes.php:82
+msgid "Add a parallax"
+msgstr ""
+
+#: ff-shortcodes.php:85
+msgid "Pricing Tables"
+msgstr ""
+
+#: ff-shortcodes.php:86
+msgid "Add a pricing table"
+msgstr ""
+
+#: ff-shortcodes.php:89
+msgid "Quote"
+msgstr ""
+
+#: ff-shortcodes.php:90
+msgid "Add a quote"
+msgstr ""
+
+#: ff-shortcodes.php:93
+msgid "Separator 2"
+msgstr ""
+
+#: ff-shortcodes.php:94
+msgid "Add separator"
+msgstr ""
+
+#: ff-shortcodes.php:97
+msgid "Slider"
+msgstr ""
+
+#: ff-shortcodes.php:101
+msgid "Social Icons"
+msgstr ""
+
+#: ff-shortcodes.php:102
+msgid "Add social icons"
+msgstr ""
+
+#: ff-shortcodes.php:105
+msgid "Team Members"
+msgstr ""
+
+#: ff-shortcodes.php:106
+msgid "Add team grid"
+msgstr ""
+
+#: ff-shortcodes.php:109
+msgid "Testimonials"
+msgstr ""
+
+#: ff-shortcodes.php:110
+msgid "Add testimonials grid"
+msgstr ""
+
+#: ff-shortcodes.php:113
+msgid "Timeline"
+msgstr ""
+
+#: ff-shortcodes.php:114
+msgid "Add timeline"
+msgstr ""
+
+#: ff-shortcodes.php:117
+msgid "Tabs / Toggle"
+msgstr ""
+
+#: ff-shortcodes.php:118
+msgid "Add tabs / tour or toggles"
+msgstr ""

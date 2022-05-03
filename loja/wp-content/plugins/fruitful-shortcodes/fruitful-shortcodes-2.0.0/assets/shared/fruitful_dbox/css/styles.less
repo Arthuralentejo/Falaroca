@@ -1,0 +1,100 @@
+/*------------------------------------------------------------------
+	Promo Text Shortcode
+-------------------------------------------------------------------*/
+.ff.fruitful_dbox {
+	font-family: 'Raleway';
+	text-align: center;
+	margin-bottom: 32px;
+	a.dbox-btn, a.dbox-btn:hover, a.dbox-btn:active {
+		box-shadow: none;
+		text-decoration: none;
+		outline: none;
+		text-decoration: none;
+	}
+	a:before, a:after {
+		display: none;
+	}
+	h4, h2, p {
+		font-family: 'Raleway';
+		text-transform: none;
+		margin: 0;
+		padding: 0;
+	}
+	h4 + h2 {
+		//margin-top: -28px;
+	}
+	.dbox-btn {
+		display: inline-block;
+		border-radius: 4px;
+		background-color: #4a90e2;
+		color: #fff;
+		padding: 12px 34px;
+	}
+	h4 {
+		font-size: 12px;
+		line-height: 1.33;
+		font-weight: 500;
+		letter-spacing: 1.5px;
+		margin-bottom: 28px;
+		color: #000;
+	}
+	h2 {
+		font-size: 48px;
+		font-weight: 600;
+		color: #000;
+		margin-bottom: 23px;
+	}
+}
+
+.fruitful_dbox.ff-style-1 {
+	p {
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.33;
+		letter-spacing: normal;
+		color: #000000;
+		margin-bottom: 30px;
+	}
+}
+
+.fruitful_dbox.ff-style-2 {
+	position: relative;
+	padding-bottom: 36px;
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.78;
+		color: #000;
+	}
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+.fruitful_dbox.ff-style-2:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	background: #4a90e2;
+	width: 60px;
+	left: 50%;
+	transform: translateX(-50% );
+	bottom: 0;
+}
+
+.fruitful_dbox.ff-style-3 {
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 50px 0;
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.78;
+		color: #000;
+	}
+}
+
+.gutenberg-editor-page {
+	.ff.fruitful_dbox h4 {
+		margin-bottom: 0;
+	}
+}
